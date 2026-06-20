@@ -1,0 +1,6 @@
+src
+tsconfig.json
+npm_access_token.txt
+.npmrc
+node_modules
+*.log

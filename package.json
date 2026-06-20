@@ -1,0 +1,48 @@
+{
+  "name": "expo-cache-image",
+  "version": "2.0.0",
+  "description": "Drop-in cached Image component for Expo / React Native. Downloads remote images once, stores them on the device's local filesystem, and serves them from cache on every subsequent load.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "expo",
+    "react-native",
+    "image",
+    "cache",
+    "cached-image",
+    "offline",
+    "expo-file-system",
+    "prefetch",
+    "image-cache"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rukkiecodes/expo-cache-image.git"
+  },
+  "homepage": "https://github.com/rukkiecodes/expo-cache-image#readme",
+  "bugs": {
+    "url": "https://github.com/rukkiecodes/expo-cache-image/issues"
+  },
+  "peerDependencies": {
+    "expo-file-system": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "~18.2.0",
+    "react": "18.2.0",
+    "react-native": "0.74.0",
+    "typescript": "^5.4.0"
+  }
+}
