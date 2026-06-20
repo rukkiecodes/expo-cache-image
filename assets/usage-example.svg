@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="img1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="img2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="img3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="img4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="640" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="60" y="70" fill="#e2e8f0" font-size="30" font-weight="700">expo-cache-image</text>
+  <text x="60" y="102" fill="#94a3b8" font-size="17">Load once over the network · serve instantly from local cache</text>
+
+  <!-- ===================== Code panel ===================== -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="150" width="560" height="410" rx="14" fill="#0b1220" stroke="#1f2a44" stroke-width="1"/>
+    <!-- title bar -->
+    <rect x="60" y="150" width="560" height="42" rx="14" fill="#111c33"/>
+    <rect x="60" y="178" width="560" height="14" fill="#111c33"/>
+    <circle cx="86" cy="171" r="6" fill="#ef4444"/>
+    <circle cx="108" cy="171" r="6" fill="#f59e0b"/>
+    <circle cx="130" cy="171" r="6" fill="#22c55e"/>
+    <text x="158" y="176" fill="#64748b" font-size="13" font-family="monospace">Gallery.tsx</text>
+
+    <!-- code lines (monospace) -->
+    <g font-family="'SF Mono', Consolas, 'Courier New', monospace" font-size="15">
+      <text x="86" y="232"><tspan fill="#c792ea">import</tspan><tspan fill="#cdd6e4"> { </tspan><tspan fill="#82aaff">CachedImage</tspan><tspan fill="#cdd6e4"> } </tspan><tspan fill="#c792ea">from</tspan><tspan fill="#c3e88d"> 'expo-cache-image'</tspan><tspan fill="#cdd6e4">;</tspan></text>
+
+      <text x="86" y="288"><tspan fill="#c792ea">export default function</tspan><tspan fill="#82aaff"> Avatar</tspan><tspan fill="#cdd6e4">() {</tspan></text>
+      <text x="110" y="316"><tspan fill="#c792ea">return</tspan><tspan fill="#cdd6e4"> (</tspan></text>
+
+      <text x="134" y="344"><tspan fill="#89ddff">&lt;</tspan><tspan fill="#f07178">CachedImage</tspan></text>
+      <text x="158" y="372"><tspan fill="#c792ea">source</tspan><tspan fill="#cdd6e4">=</tspan><tspan fill="#c3e88d">"https://picsum.photos/400"</tspan></text>
+      <text x="158" y="400"><tspan fill="#c792ea">style</tspan><tspan fill="#cdd6e4">={{ width: </tspan><tspan fill="#f78c6c">180</tspan><tspan fill="#cdd6e4">, height: </tspan><tspan fill="#f78c6c">180</tspan><tspan fill="#cdd6e4"> }}</tspan></text>
+      <text x="158" y="428"><tspan fill="#c792ea">resizeMode</tspan><tspan fill="#cdd6e4">=</tspan><tspan fill="#c3e88d">"cover"</tspan></text>
+      <text x="134" y="456"><tspan fill="#89ddff">/&gt;</tspan></text>
+
+      <text x="110" y="484"><tspan fill="#cdd6e4">);</tspan></text>
+      <text x="86" y="512"><tspan fill="#cdd6e4">}</tspan></text>
+    </g>
+
+    <!-- caption -->
+    <text x="86" y="544" fill="#64748b" font-size="13">Drop-in replacement for &lt;Image&gt; — same props, automatic caching.</text>
+  </g>
+
+  <!-- ===================== Phone preview ===================== -->
+  <g filter="url(#shadow)">
+    <!-- device body -->
+    <rect x="760" y="150" width="340" height="410" rx="40" fill="#0b1220" stroke="#334155" stroke-width="2"/>
+    <!-- screen -->
+    <rect x="780" y="172" width="300" height="366" rx="26" fill="#0f172a"/>
+    <!-- notch -->
+    <rect x="900" y="182" width="60" height="14" rx="7" fill="#0b1220"/>
+
+    <!-- status / header -->
+    <text x="804" y="230" fill="#e2e8f0" font-size="17" font-weight="700">Gallery</text>
+    <text x="804" y="252" fill="#64748b" font-size="12">cached · offline-ready</text>
+
+    <!-- image grid -->
+    <!-- row 1 -->
+    <rect x="804" y="272" width="120" height="120" rx="12" fill="url(#img1)"/>
+    <rect x="936" y="272" width="120" height="120" rx="12" fill="url(#img2)"/>
+    <!-- row 2 -->
+    <rect x="804" y="404" width="120" height="120" rx="12" fill="url(#img3)"/>
+    <!-- loading tile (placeholder spinner) -->
+    <rect x="936" y="404" width="120" height="120" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <g transform="translate(996,464)">
+      <circle r="16" fill="none" stroke="#334155" stroke-width="4"/>
+      <path d="M 0 -16 A 16 16 0 0 1 16 0" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <text x="996" y="500" fill="#64748b" font-size="10" text-anchor="middle">downloading…</text>
+
+    <!-- little "cached ✓" badges on loaded tiles -->
+    <g>
+      <circle cx="906" cy="290" r="11" fill="#0b1220" opacity="0.85"/>
+      <path d="M 901 290 l 3 3 l 6 -7" fill="none" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1038" cy="290" r="11" fill="#0b1220" opacity="0.85"/>
+      <path d="M 1033 290 l 3 3 l 6 -7" fill="none" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="906" cy="422" r="11" fill="#0b1220" opacity="0.85"/>
+      <path d="M 901 422 l 3 3 l 6 -7" fill="none" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- flow arrow between panels -->
+  <g>
+    <path d="M 636 360 L 744 360" stroke="#475569" stroke-width="2.5" stroke-dasharray="6 6"/>
+    <path d="M 744 360 l -12 -7 l 0 14 z" fill="#475569"/>
+  </g>
+</svg>

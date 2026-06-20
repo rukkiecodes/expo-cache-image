@@ -43,6 +43,12 @@ export default function Avatar() {
 `source` may be a string URL, an `{ uri }` object, or a local `require(...)`
 asset (local assets are rendered directly without caching).
 
+![expo-cache-image usage example: a CachedImage snippet on the left and a phone preview showing a cached image grid with one tile still downloading](./assets/usage-example.png)
+
+_On first load each remote image is downloaded and cached; the placeholder
+spinner shows while a tile downloads, and every later render is served instantly
+from local storage — even offline._
+
 ### Placeholder & fallback
 
 ```tsx
