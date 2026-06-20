@@ -1,5 +1,10 @@
 # expo-cache-image
 
+[![npm version](https://img.shields.io/npm/v/expo-cache-image.svg)](https://www.npmjs.com/package/expo-cache-image)
+[![npm downloads](https://img.shields.io/npm/dm/expo-cache-image.svg)](https://www.npmjs.com/package/expo-cache-image)
+[![install size](https://img.shields.io/bundlephobia/min/expo-cache-image.svg)](https://bundlephobia.com/package/expo-cache-image)
+[![license](https://img.shields.io/npm/l/expo-cache-image.svg)](./LICENSE)
+
 A tiny, dependency-light **image caching** solution for Expo / React Native apps.
 
 When an image is loaded over the internet it is downloaded **once**, stored on
