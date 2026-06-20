@@ -1,11 +1,12 @@
 {
   "name": "expo-cache-image",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Drop-in cached Image component for Expo / React Native. Downloads remote images once, stores them on the device's local filesystem, and serves them from cache on every subsequent load.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
     "build",
+    "assets",
     "README.md",
     "LICENSE"
   ],
