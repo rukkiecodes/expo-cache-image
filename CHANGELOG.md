@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.2] - 2026-06-20
+
+### Changed
+- Include `CHANGELOG.md` in the published package.
+
 ## [2.0.1] - 2026-06-20
 
 ### Added
@@ -44,6 +49,7 @@ Initial release of the rewritten package.
 - Dependency-free FNV-1a URL hashing (no `expo-crypto` peer dependency).
 - TypeScript sources compiled to JS with bundled type declarations.
 
-[Unreleased]: https://github.com/rukkiecodes/expo-cache-image/compare/v2.0.1...HEAD
+[Unreleased]: https://github.com/rukkiecodes/expo-cache-image/compare/v2.0.2...HEAD
+[2.0.2]: https://github.com/rukkiecodes/expo-cache-image/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/rukkiecodes/expo-cache-image/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/rukkiecodes/expo-cache-image/releases/tag/v2.0.0
